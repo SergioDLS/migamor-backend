@@ -1,7 +1,7 @@
 {
-  "name": "masamor-backend",
+  "name": "migamor-backend",
   "version": "0.1.0",
-  "description": "Masamor Digital Platform — API (NestJS)",
+  "description": "Migamor Digital Platform — API (NestJS)",
   "private": true,
   "engines": {
     "node": ">=24"
