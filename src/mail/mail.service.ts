@@ -6,7 +6,7 @@ const STATUS_COPY: Record<OrderStatus, { subject: string; heading: string; body:
   requested: {
     subject: 'Recibimos tu solicitud de pedido',
     heading: '¡Recibimos tu solicitud! 🧾',
-    body: 'Tu pedido quedó registrado. El equipo de Masamor lo revisará y confirmará pronto.',
+    body: 'Tu pedido quedó registrado. El equipo de Migamor lo revisará y confirmará pronto.',
   },
   confirmed: {
     subject: 'Tu pedido fue confirmado',
@@ -26,7 +26,7 @@ const STATUS_COPY: Record<OrderStatus, { subject: string; heading: string; body:
   delivered: {
     subject: 'Tu pedido fue entregado',
     heading: '¡Entregado! 🎉',
-    body: '¡Tu pedido fue entregado! Gracias por confiar en Masamor.',
+    body: '¡Tu pedido fue entregado! Gracias por confiar en Migamor.',
   },
   cancelled: {
     subject: 'Tu pedido fue cancelado',
@@ -45,7 +45,7 @@ export class MailService {
   constructor() {
     const key = process.env.RESEND_API_KEY;
     this.resend = key ? new Resend(key) : null;
-    this.from = process.env.RESEND_FROM ?? 'Masamor <onboarding@resend.dev>';
+    this.from = process.env.RESEND_FROM ?? 'Migamor <onboarding@resend.dev>';
     this.frontendUrl = process.env.FRONTEND_URL ?? 'http://localhost:3000';
 
     if (!this.resend) {
@@ -103,7 +103,7 @@ export class MailService {
     <div style="font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#f9f5ef;padding:32px">
       <div style="max-width:520px;margin:0 auto;background:#ffffff;border-radius:16px;overflow:hidden;border:1px solid #eaddce">
         <div style="background:#4e2d1e;padding:24px;text-align:center">
-          <div style="color:#f9e6c8;font-size:26px;font-weight:700;letter-spacing:.3px">Masamor</div>
+          <div style="color:#f9e6c8;font-size:26px;font-weight:700;letter-spacing:.3px">Migamor</div>
           <div style="color:#ebaba2;font-size:13px;margin-top:2px">Calidad, horno y corazón</div>
         </div>
         <div style="padding:28px">
@@ -118,7 +118,7 @@ export class MailService {
           <a href="${portalUrl}" style="display:inline-block;background:#ee7264;color:#ffffff;text-decoration:none;padding:12px 22px;border-radius:10px;font-weight:600;font-size:14px">Ver mi pedido</a>
         </div>
       </div>
-      <p style="text-align:center;color:#b3a595;font-size:12px;margin-top:16px">© Masamor · Este es un mensaje automático.</p>
+      <p style="text-align:center;color:#b3a595;font-size:12px;margin-top:16px">© Migamor · Este es un mensaje automático.</p>
     </div>`;
   }
 }

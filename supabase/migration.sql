@@ -1,5 +1,5 @@
 -- ============================================================
--- Masamor Digital Platform — Esquema base + RLS (walking skeleton)
+-- Migamor Digital Platform — Esquema base + RLS (walking skeleton)
 -- Ejecutar en Supabase: SQL Editor > New query > pegar > Run.
 -- ============================================================
 

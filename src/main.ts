@@ -34,6 +34,6 @@ async function bootstrap() {
   const port = process.env.PORT ?? 3001;
   await app.listen(port);
   // eslint-disable-next-line no-console
-  console.log(`Masamor API escuchando en http://localhost:${port}`);
+  console.log(`Migamor API escuchando en http://localhost:${port}`);
 }
 bootstrap();
